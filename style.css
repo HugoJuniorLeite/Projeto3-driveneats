@@ -192,7 +192,11 @@ border:none
 
 
 .escondido{
-display: none;
+opacity: 0;
+}
+
+.border .escondido{
+  opacity: 100;
 }
 
 .flex{

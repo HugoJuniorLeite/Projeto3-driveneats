@@ -4,32 +4,33 @@ let sobremesa;
 
 function selecionarPrato(clicado) {
   const borda = document.querySelector("#prato .border");
-  const icon = document.querySelector("#prato .escondido")
+ // const icon = document.querySelector("#prato .escondido")
   
   if (borda !== null) {
     borda.classList.remove("border");
-    icon.classList.add('escondido')
+
+   // icon.classList.add('escondido')
   }
   
-  icon.classList.add("escondido")
+  //icon.classList.add("escondido")
   clicado.classList.add("border");
   
 
   prato = clicado;
   
-  apareceIcon()
+ // apareceIcon()
   liberaBotao();
 
 }
 
-function apareceIcon(){
-  const icon = document.querySelector("#prato .escondido");
-if(icon !==null){
-  icon.classList.remove('escondido')
-}
+//function apareceIcon(){
+//  const icon = document.querySelector("#prato .escondido");
+//if(icon !==null){
+//  icon.classList.remove('escondido')
+//}
 
-icon.classList.add("escondido")
-}
+//icon.classList.add("escondido")
+//}
 
 function selecionarBebida(clicado) {
   const borda = document.querySelector("#bebida .border");
