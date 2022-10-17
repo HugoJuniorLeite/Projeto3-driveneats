@@ -4,16 +4,17 @@ let sobremesa;
 
 function selecionarPrato(clicado) {
   const borda = document.querySelector("#prato .border");
+  const icon = document.querySelector("#prato .escondido")
   
   if (borda !== null) {
     borda.classList.remove("border");
-    
+    icon.classList.add('escondido')
   }
   
-  
+  icon.classList.add("escondido")
   clicado.classList.add("border");
   
-  
+
   prato = clicado;
   
   apareceIcon()
