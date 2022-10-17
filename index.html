@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/reset.css" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <title>Driven Eats</title>
+</head>
+
+<body>
+  <header>
+    <section class="topo">
+      <h1>DrivenEats</h1>
+      <p>Sua comida em 6 minutos</p>
+    </section>
+  </header>
+  <main>
+    <section id="prato">
+      <h2>Primeiro, seu prato</h2>
+      <ul>
+        <li  onclick="selecionarPrato(this)">
+          <img src="/images/fraldinha-ratatouille.jfif" alt="" />
+          <p class="itemSelecionado">Fraldinha</p>
+          <p>Desmancha na sua boca</p>
+          <div class="flex">
+            <p class="preco">R$ 34,90</p>
+            <div class="confere escondido">
+            <ion-icon    name="checkmark-circle"></ion-icon>
+          </div>
+        </div>
+          </li>
+
+        <li  onclick="selecionarPrato(this)">
+          <img src="/images/costela-barbecue.jfif" alt="" />
+          <p class="itemSelecionado">Costela</p>
+          <p>Costela ao molho barbecue</p>
+          <div class="flex">
+          <p class="preco">R$ 54,30</p>
+          <div class="confere escondido">
+          <ion-icon  name="checkmark-circle"></ion-icon>
+          </div>
+        </div>
+          </li>
+
+        <li  onclick="selecionarPrato(this)">
+          <img src="/images/tabua-de-frios.jfif" alt="" />
+          <p class="itemSelecionado">Taboa de frios</p>
+          <p>Uma porçao que preenche o coração</p>
+          <div class="flex">
+          <p class="preco">R$ 38,90</p>
+          <div class="confere escondido">
+          <ion-icon  name="checkmark-circle"></ion-icon>
+          </div>
+          </div>
+        </li>
+        
+      </ul>
+    </section>
+
+    <section id="bebida">
+      <h2>Agora, sua bebida</h2>
+      <ul>
+        <li onclick="selecionarBebida(this)">
+          <img src="images/Refrigerante-antigo-Cruch.jpg" alt="" />
+          <p class="itemSelecionado">CruSh Laranja</p>
+          <p>Garrafinha 290ml</p>
+          <p class="preco">R$ 3,90</p>
+        </li>
+
+        <li onclick="selecionarBebida(this)">
+          <img src="images/sucos-tanjal.jfif" alt="" />
+          <p class="itemSelecionado"> Suco Tanjal</p>
+          <p>Lata 1l</p>
+          <p class="preco">R$ 3,85</p>
+        </li>
+
+        <li onclick="selecionarBebida(this)">
+          <img src="images/pop-laranja.jpg" alt="" />
+          <p class="itemSelecionado">Pop Laranja</p>
+          <p>Lata 350ml</p>
+          <p class="preco">R$ 4,50</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="sobremesa">
+      <h2>Por fim, sua sobremesa</h2>
+      <ul>
+        <li onclick="selecionarSobremesa(this)">
+          <img src="/images/bolo-red-velvet.jfif" alt="" />
+          <p class="itemSelecionado">Bolo Red Velvet</p>
+          <p>Feito com frutas</p>
+          <p class="preco">R$ 13,90</p>
+        </li>
+
+        <li onclick="selecionarSobremesa(this)">
+          <img src="/images/mousse-maracuja.jfif" alt="" />
+          <p class="itemSelecionado">Mousse</p>
+          <p>De Maracujá</p>
+          <p class="preco">R$ 8,90</p>
+        </li>
+
+        <li onclick="selecionarSobremesa(this)">
+          <img src="/images/torta-de-limão.jfif" alt="" />
+          <p class="itemSelecionado">Torda de Limão</p>
+          <p>O gostinho da fruta</p>
+          <p class="preco">R$ 6,90</p>
+        </li>
+      </ul>
+    </section>
+
+
+
+  </main>
+  <footer>
+    <section>
+      <button id="botao" class="button-desativado" onclick="finalizarPedido(this)" disabled="true">
+        <h3>Selecione os 3 itens para fechar o pedido</h3>
+      </button>
+    </section>
+  </footer>
+
+  <script src="/script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
